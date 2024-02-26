@@ -12,17 +12,3 @@ public static class StatusExtensions
         return _chineseNames.TryGetValue(status, out var name) ? name : null;
     }
 }
-public static class StatusExtensions
-{
-    private static readonly Dictionary<Status, string> _chineseNames = new Dictionary<Status, string>
-    {
-        { Status.Pending, "待處理" },
-        { Status.Approved, "已批准" },
-        { Status.Rejected, "已拒絕" }
-    };
-
-    public static string ToChinese(this Status status)
-    {
-        return _chineseNames.TryGetValue(status, out var name) ? name : null;
-    }
-}
