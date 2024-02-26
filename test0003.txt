@@ -2,12 +2,7 @@ using System.ComponentModel.DataAnnotations;
 
 public enum Status
 {
-    [Display(Name = "待處理")]
-    Pending,
-    [Display(Name = "已批准")]
-    Approved,
-    [Display(Name = "已拒絕")]
-    Rejected
+
 }
 
 public static string GetDisplayName(this Enum enumValue)
