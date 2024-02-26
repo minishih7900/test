@@ -2,7 +2,9 @@ using System.ComponentModel.DataAnnotations;
 
 public enum Status
 {
-
+ [Display(Name = "待處理")]
+ [Display(Name = "待處理")]
+ [Display(Name = "待處理")]
 }
 
 public static string GetDisplayName(this Enum enumValue)

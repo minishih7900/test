@@ -2,7 +2,7 @@ public static class StatusExtensions
 {
     private static readonly Dictionary<Status, string> _chineseNames = new Dictionary<Status, string>
     {
-
+ [Display(Name = "待處理")] [Display(Name = "待處理")] [Display(Name = "待處理")]
     };
 
     public static string ToChinese(this Status status)
